@@ -6,7 +6,7 @@
 
 **L'explorateur de fichiers nouvelle génération pour Windows 10 et 11.**
 
-[**⬇ Télécharger Explia**](https://github.com/innov-lia/Explia/releases/latest) · [Prise en main](#prise-en-main) · [Raccourcis](#raccourcis-clavier) · [English](#in-english)
+[**⬇ Télécharger Explia**](https://github.com/innov-lia/Explia/releases) · [Prise en main](#prise-en-main) · [Raccourcis](#raccourcis-clavier) · [English](#in-english)
 
 </div>
 
@@ -16,7 +16,7 @@ Explia réunit dans une seule fenêtre tout ce qu'on va chercher d'habitude dans
 
 ## Installation
 
-1. Ouvrez la page [**Versions**](https://github.com/innov-lia/Explia/releases/latest) et téléchargez `explia-…-windows-x64.zip`.
+1. Ouvrez la page [**Versions**](https://github.com/innov-lia/Explia/releases) et téléchargez `explia-…-windows-x64.zip`.
 2. Décompressez-le et lancez **`explia.exe`**. Il n'y a rien à installer.
 
 - Prérequis : **Windows 10 ou 11, 64 bits**.
@@ -89,4 +89,4 @@ La fenêtre a trois volets : **à gauche** la navigation, **au centre** le conte
 
 ## In English
 
-**Explia is a modern file explorer for Windows 10/11 (64-bit)**, shipped as a single portable `explia.exe`: download the zip from [Releases](https://github.com/innov-lia/Explia/releases/latest), unzip and run. Three panes (navigation, folder content, details), list / thumbnails / columns / split views, quick look with **Space** (images, text, PDF, Office documents), image editing, video and music playback (with VLC installed), encrypted notes, disk usage, duplicate and large-file finder, ZIP, drag and drop, six interface languages. No telemetry, no network access; files are never overwritten and deletions always go to the Recycle Bin.
+**Explia is a modern file explorer for Windows 10/11 (64-bit)**, shipped as a single portable `explia.exe`: download the zip from [Releases](https://github.com/innov-lia/Explia/releases), unzip and run. Three panes (navigation, folder content, details), list / thumbnails / columns / split views, quick look with **Space** (images, text, PDF, Office documents), image editing, video and music playback (with VLC installed), encrypted notes, disk usage, duplicate and large-file finder, ZIP, drag and drop, six interface languages. No telemetry, no network access; files are never overwritten and deletions always go to the Recycle Bin.
