@@ -28,7 +28,8 @@ Explia réunit dans une seule fenêtre tout ce qu'on va chercher d'habitude dans
 
 La fenêtre a trois volets : **à gauche** la navigation, **au centre** le contenu du dossier, **à droite** les détails et l'aperçu de l'élément choisi.
 
-- **Se déplacer** : double-clic ou **Entrée** pour ouvrir un dossier, **Retour arrière** pour remonter, ou cliquez dans le chemin en haut (vous pouvez aussi y taper une adresse, puis Entrée).
+- **Se déplacer** : double-clic ou **Entrée** pour ouvrir un dossier, **Retour arrière** ou la ligne **`..`** pour remonter. Tout en haut d'un disque, `..` passe au **disque suivant** (C: → D: → E:…, puis de nouveau C:) ; tout en haut de OneDrive, il mène à C:.
+- **Barre d'adresse** : cliquez dans le chemin pour taper une adresse (puis Entrée) ; dessous s'affichent vos **25 derniers dossiers ouverts**, comme dans l'Explorateur : un clic en ouvre un, et ce que vous tapez filtre la liste.
 - **Volet de gauche** : onglets *Accueil* (vos dossiers, vos disques et leur remplissage), *Historique*, *Favoris*, *Applications*, *OneDrive*, *Réseau*. Clic droit sur un dossier > « Épingler à l'accueil » ou « Ajouter aux favoris ».
 - **Affichages** (en haut à droite) : **Normal** (liste), **Mosaïque** (miniatures des photos et vidéos), **Colonnes**, **Fractionné** (deux dossiers côte à côte pour copier de l'un à l'autre).
 - **Trier et ranger** : cliquez sur un titre de colonne pour trier ; *Grouper* par type ou par date ; *Filtrer* les images, vidéos, sons.
@@ -41,6 +42,8 @@ La fenêtre a trois volets : **à gauche** la navigation, **au centre** le conte
 ### Ce que vous pouvez faire
 
 - **Retoucher une image** : Espace sur une image, puis **Edit Mode** : crayon, formes, flèches, texte, recadrage, rotation, calques. **Save** enregistre, **Save Copy** crée une copie à côté.
+- **Capturer une partie d'image** : bouton **📷 Capture**, puis tracez la zone à main levée ; quand vous lâchez, elle est **copiée dans le presse-papiers**, prête à coller ailleurs. **📋 Tout capturer**, juste à côté, copie toute l'image. Un bandeau vert confirme la copie.
+- **QuickPix** (bouton en haut, à gauche de *Notes*) : une **page blanche** pour dessiner vite un schéma ou un croquis, avec tous les outils de la retouche. Donnez-lui un **nom**, puis **Save** : le dessin est enregistré en PNG **dans vos Téléchargements**.
 - **Modifier un texte** : Espace sur un fichier texte, il s'ouvre prêt à être modifié (rechercher, remplacer, imprimer, **Ctrl+S** pour enregistrer).
 - **Lire un PDF** : Espace sur un PDF ; zoom, pages, copie du texte, impression.
 - **Regarder une vidéo, écouter de la musique** : double-clic ; la vidéo continue pendant que vous naviguez. Les sons se rangent dans une **playlist** (volet de droite).
@@ -55,6 +58,9 @@ La fenêtre a trois volets : **à gauche** la navigation, **au centre** le conte
 | --- | --- |
 | ![Retouche d'image](captures/retouche-image.png) | ![Lecture d'un PDF](captures/pdf.png) |
 | ![Vidéo](captures/video.png) | ![Notes](captures/notes.png) |
+| ![QuickPix : page blanche](captures/quickpix.png) | ![Tout capturer : image copiée dans le presse-papiers](captures/capture.png) |
+
+![Barre d'adresse : derniers dossiers ouverts](captures/adresse.png)
 
 ![Espace disque](captures/espace-disque.png)
 
@@ -66,6 +72,8 @@ La fenêtre a trois volets : **à gauche** la navigation, **au centre** le conte
 | **Retour arrière** ou **←** | Dossier parent |
 | **Alt+← / Alt+→** | Dossier précédent / suivant |
 | **Espace** | Aperçu rapide (ou lecture / pause) |
+| **Ctrl+S** (retouche, QuickPix) | Enregistrer |
+| **Échap** | Fermer l'aperçu, QuickPix ou l'outil Capture |
 | **Ctrl+F** | Rechercher |
 | **F2** | Renommer |
 | **Suppr** puis **Entrée** | Envoyer à la corbeille |
@@ -78,15 +86,14 @@ La fenêtre a trois volets : **à gauche** la navigation, **au centre** le conte
 ## Vos données
 
 - Aucune publicité, aucune télémétrie, aucun compte : Explia ne se connecte jamais à Internet.
-- Vos réglages sont dans `%APPDATA%\ExPLIA\settings.txt` ; vos notes, chiffrées, dans `%APPDATA%\ExPLIA\notes`.
+- Vos réglages (et vos 25 derniers dossiers) sont dans `%APPDATA%\ExPLIA\settings.txt` ; vos notes, chiffrées, dans `%APPDATA%\ExPLIA\notes`. Les dessins QuickPix vont dans votre dossier Téléchargements, sans jamais écraser un fichier.
 - Explia ne touche à vos fichiers que lorsque vous le demandez, sans jamais écraser un fichier existant ; la suppression va toujours à la corbeille.
 
 ## Limites connues
 
 - Préversion, testée sur Windows 11 ; l'exécutable n'est pas signé.
 - Archives : ZIP uniquement.
-- Fenêtre « Voulez-vous sauvegarder ? » des éditeurs : les boutons peuvent ne pas répondre ; enregistrez avec **Save** ou **Ctrl+S** avant de fermer.
 
 ## In English
 
-**Explia is a modern file explorer for Windows 10/11 (64-bit)**, shipped as a single portable `explia.exe`: download the zip from [Releases](https://github.com/innov-lia/Explia/releases), unzip and run. Three panes (navigation, folder content, details), list / thumbnails / columns / split views, quick look with **Space** (images, text, PDF, Office documents), image editing, video and music playback (with VLC installed), encrypted notes, disk usage, duplicate and large-file finder, ZIP, drag and drop, six interface languages. No telemetry, no network access; files are never overwritten and deletions always go to the Recycle Bin.
+**Explia is a modern file explorer for Windows 10/11 (64-bit)**, shipped as a single portable `explia.exe`: download the zip from [Releases](https://github.com/innov-lia/Explia/releases), unzip and run. Three panes (navigation, folder content, details), list / thumbnails / columns / split views, quick look with **Space** (images, text, PDF, Office documents), image editing, freehand **Capture** to the clipboard (or **Capture all**), **QuickPix** blank-page drawing saved as PNG in Downloads, recent-folders list under the address bar, video and music playback (with VLC installed), encrypted notes, disk usage, duplicate and large-file finder, ZIP, drag and drop, six interface languages. No telemetry, no network access; files are never overwritten and deletions always go to the Recycle Bin.
